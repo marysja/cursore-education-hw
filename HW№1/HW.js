@@ -13,7 +13,7 @@ console.log(sumOfThings);
 console.log(Math.floor(sumOfThings));
 
 function MyRound100(sumOfThings) {
-  return Math.ceil(sumOfThings / 100) * 100;
+  return Math.floor(sumOfThings / 100) * 100;
 }
 
 console.log(MyRound100(sumOfThings));
