@@ -20,3 +20,9 @@ for (let i = numberN; i <= numberM; i++) {
 }
 
 console.log(sum);
+
+document.write(`
+Число N: ${numberN} </br>
+Число M: ${numberM} </br>
+Сума чисел: ${sum} </br>
+`)
