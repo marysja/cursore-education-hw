@@ -1,6 +1,6 @@
-const costSocks = 15.678;
-const costPapaya = 123.965;
-const costShirt = 90.2345;
+const COST_SOCKS = 15.678;
+const COST_PAPAYA = 123.965;
+const COST_SHIRT = 90.2345;
 
 console.log(Math.max(costSocks, costPapaya, costShirt));
 
