@@ -10,7 +10,7 @@ sumOfThings = costSocks + costPapaya + costShirt;
 
 console.log(sumOfThings);
 
-console.log(Math.floor(sumOfThings));
+console.log(Math.floor(costSocks) + Math.floor(costPapaya) + Math.floor(costShirt));
 
 function MyRound100(sumOfThings) {
   return Math.floor(sumOfThings / 100) * 100;
