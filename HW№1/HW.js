@@ -1,6 +1,6 @@
-let costSocks = 15.678;
-let costPapaya = 123.965;
-let costShirt = 90.2345;
+const costSocks = 15.678;
+const costPapaya = 123.965;
+const costShirt = 90.2345;
 
 console.log(Math.max(costSocks, costPapaya, costShirt));
 
@@ -13,7 +13,7 @@ console.log(sumOfThings);
 console.log(Math.floor(costSocks) + Math.floor(costPapaya) + Math.floor(costShirt));
 
 function MyRound100(sumOfThings) {
-  return Math.floor(sumOfThings / 100) * 100;
+  return Math.ceil(sumOfThings / 100) * 100;
 }
 
 console.log(MyRound100(sumOfThings));
