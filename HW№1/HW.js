@@ -20,11 +20,7 @@ console.log(MyRound100(sumOfThings));
 
 roundSum = Math.floor(sumOfThings);
 
-if (roundSum % 2 == 0) {
-    console.log( true );
-  } else {
-    console.log( false );
-  }
+console.log(Math.floor(sumOfThings)%2===0);
 
 
 change = 500 - sumOfThings;
@@ -47,7 +43,7 @@ console.log  (`Мінімальна ціна: ${Math.min(costSocks, costPapaya, 
 console.log  (`Вартість всіх товарів: ${sumOfThings = costSocks + costPapaya + costShirt}`);
 console.log  (`Вартість всіх товарів: ${Math.floor(sumOfThings)}`);
 console.log  (`Вартість всіх товарів: ${MyRound100(sumOfThings)}`);
-console.log  (`Я не знаю як це зробити: ${000}`);
+console.log  (`Чи є ціла сума всіх вартостей парною: ${Math.floor(sumOfThings)%2===0}`);
 console.log  (`Решта: ${change = 500 - sumOfThings}`);
 console.log (`Середня вартість: ${result.toFixed(2)}`);
 console.log (`Втрачена вигода: ${lostProfit.toFixed(0)}`);
