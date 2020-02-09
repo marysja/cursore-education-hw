@@ -1,4 +1,4 @@
-
+//Создать функцию getMaxDigit(number) – которая получает любое число и выводит самую большую цифру в этом числе.
 function getMaxDigit(number)
 {
   number = number.toString();  
@@ -11,10 +11,10 @@ function getMaxDigit(number)
             max = number[i];
         }
     }
-    return max;
+   return max;
 }
 
-
+//Создать функцию, которая вычисляет степень числа. 
 function myPow(a, n) {
     let b = a;
     for (let i = 1; i < n; i++) {
@@ -24,26 +24,26 @@ function myPow(a, n) {
    return b;
 }
 
-
+//Создать функцию, которая форматирует имя, делая первую букву заглавной.
 function firstUpperCase(text)
 {
     return text[0].toUpperCase()+text.substr(1).toLowerCase();
 }
 
 
-
+//Создать функцию, которая вычисляет сумму оставшуюся после оплаты налога от заработной платы.
 function salaryTax(money){
   const TALLAGE = 19.5;  
   return money -(money / 100 * TALLAGE);
 }
 
-
+//Создать функцию, которая возвращает случайное целое число в диапазоне от N до M
 function randomNumber(min, max) {
     let rand = min - 1 + Math.random() * (max - min + 1);
   return Math.round(rand);
 }
 
-
+//Создать функцию, которая считает сколько раз определенная буква повторяется в слове
 function countLetter( symbol, str) {
     let count = 0;
     symbol = symbol.toLowerCase();
@@ -56,7 +56,7 @@ function countLetter( symbol, str) {
     return count;
 }
 
-
+//Создайте функцию, которая удаляет все буквы из предложения
 function deleteLetters(char,str) {
     let newStr = '';
     char = char.toLowerCase();
@@ -69,7 +69,7 @@ function deleteLetters(char,str) {
     return newStr;
 }
 
-
+//Создайте функцию, которая удалит из предложения буквы, которые встречаются более 1 раза
 function deleteLetter(str) {
     let newStr = '';
     str.toLowerCase();
