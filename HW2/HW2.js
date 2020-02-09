@@ -1,10 +1,10 @@
 let numberN = parseInt(prompt("Введіть число: "), 10);
-while (Number.isInteger(numberN)) {
+while (isNaN(numberN)) {
  numberN = parseInt(prompt("Введіть число: "), 10);
 }
 
 let numberM = parseInt(prompt("Введіть число: "), 10);
-while (Number.isInteger(numberM)) {
+while (isNaN(numberM)) {
  numberM = parseInt(prompt("Введіть число: "), 10);
 
 }
