@@ -44,7 +44,6 @@ function randomNumber(min, max) {
 }
 
 
-str []i + 1
 let count = 1;
 function countLetter( char, someWord ) {
     for ( let i = 0; i < someWord.length; i++) {
