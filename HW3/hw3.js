@@ -92,6 +92,6 @@ document.writeln(`Ступінь числа: ${myPow(9, 7)}`);
 document.writeln(`Форматування імені: ${firstUpperCase("мАрУсЯ")}`);
 document.writeln(`Залишок після сплати податку: ${salaryTax(10000)}`);
 document.writeln(`Випадкове ціле число: ${randomNumber(1, 20)}`);
-document.writeln(`Кількість певних символів в слові: ${countLetter("а", "Абракадабра")}`;
+document.writeln(`Кількість певних символів в слові: ${countLetter("а", "Абракадабра")}`);
 document.writeln(`Видалені букви зі слова: ${deleteLetters('a', "blablabla")}`);
 document.writeln(`Видалені букви з речення: ${deleteLetter("The cookie was very tasty")}`);
