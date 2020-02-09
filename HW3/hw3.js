@@ -71,18 +71,12 @@ function deleteLetters(char,str) {
 
 //Создайте функцию, которая удалит из предложения буквы, которые встречаются более 1 раза
 function deleteLetter(str) {
-    let newStr = '';
-    str.toLowerCase();
-    for(let i = 0; i<str.length;i++){
-        let k = 0;
-        for (let j = 0; j < str.length; j++){
-            if(str [i] === str [j]){
-                k += 1;
-            }
-        }
-        if ( k<2 ){
-            newStr += str [i];
-        }
+    let newStr = " ";
+   str = str.toLowerCase();
+    for (let i = 0; i < str.length; i++) {
+      if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
+        newStr += str[i];
+      }
     }
     return newStr;
 }
