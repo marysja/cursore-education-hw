@@ -44,14 +44,17 @@ function randomNumber(min, max) {
 }
 
 
-let count = 1;
-function countLetter( char, someWord ) {
-    for ( let i = 0; i < someWord.length; i++) {
-        someWord.charAt( i ) == char ? count++ : false;
+function countLetter( symbol, str) {
+    let count = 0;
+    symbol = symbol.toLowerCase();
+    str = str.toLowerCase();
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === symbol) {
+            count++;
+        }
     }
-    console.log( count ); 
-    }
-countLetter("а", "Абракадабра");
+    return count;
+}
 
 
 function deleteLetters(char,str) {
@@ -80,15 +83,15 @@ function deleteLetter(str) {
         if ( k<2 ){
             newStr += str [i];
         }
-
     }
     return newStr;
-
 }
+
 document.writeln(`Найбільша цифра з числа: ${getMaxDigit(987)}`);
 document.writeln(`Ступінь числа: ${myPow(9, 7)}`);
 document.writeln(`Форматування імені: ${firstUpperCase("мАрУсЯ")}`);
 document.writeln(`Залишок після сплати податку: ${salaryTax(10000)}`);
 document.writeln(`Випадкове ціле число: ${randomNumber(1, 20)}`);
+document.writeln(`Кількість певних символів в слові: ${countLetter("а", "Абракадабра")}`;
 document.writeln(`Видалені букви зі слова: ${deleteLetters('a', "blablabla")}`);
 document.writeln(`Видалені букви з речення: ${deleteLetter("The cookie was very tasty")}`);
