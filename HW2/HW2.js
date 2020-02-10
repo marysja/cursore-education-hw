@@ -1,9 +1,12 @@
-let numberN = parseInt(prompt("Введіть число: "), 10);
+let numberN = +(prompt("Введіть число: "));
+let numberM = +(prompt("Введіть число: "));
+if (parseFloat(numberN) - parseInt(numberN) !== 0 || parseFloat(numberM) - parseInt(numberM) !== 0) {
+    alert("Спробуйте ще раз");
+}
 while (isNaN(numberN)) {
- numberN = parseInt(prompt("Введіть число: "), 10);
+ numberN = parseInt(prompt("Введіть число: "),10);
 }
 
-let numberM = parseInt(prompt("Введіть число: "), 10);
 while (isNaN(numberM)) {
  numberM = parseInt(prompt("Введіть число: "), 10);
 
