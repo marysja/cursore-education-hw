@@ -1,10 +1,15 @@
 let numberN = +(prompt("Введіть число: "));
 let numberM = +(prompt("Введіть число: "));
-while (parseFloat(numberN) - parseInt(numberN) !== 0) {
-    numberN = +(prompt("Введіть число: "));
+
+
+
+while (parseFloat(numberM) - parseInt(numberM) !== 0 || numberN !== "") {
+    alert ("Спробуйте ще раз");
+  numberM = +(prompt("Введіть число: "));
 } 
-while (parseFloat(numberM) - parseInt(numberM) !== 0) {
-    numberM = +(prompt("Введіть число: "));
+while (parseFloat(numberN) - parseInt(numberN) !== 0 || numberM !== "") {
+    alert ("Спробуйте ще раз");
+  numberN = +(prompt("Введіть число: "));
 } 
 
 const SKIP_EVEN_NUMBERS = confirm("Пропустити парні числа?", false);
@@ -28,7 +33,7 @@ for (let i = numberM; i <= numberN; i++) {
   } else {
     sum += i;
   }
- 
+
 }
 document.write(`
 Число N: ${numberN} </br>
