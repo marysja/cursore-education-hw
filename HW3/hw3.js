@@ -68,6 +68,12 @@ function deleteLetters(char,str) {
     }
     return newStr;
 }
+//Создайте функцию, которая проверяет является ли слово палиндромом. 
+function checkPalindrom (str) {
+  str = str.replace(/[.,?:;\/() _-]/g, '').toLowerCase();
+  return str == str.split('').reverse().join('');
+}
+
 
 //Создайте функцию, которая удалит из предложения буквы, которые встречаются более 1 раза
 function deleteLetter(str) {
@@ -88,5 +94,6 @@ document.writeln(`
 Випадкове ціле число: ${randomNumber(1, 20)}<br>
 Кількість певних символів в слові: ${countLetter("а", "Абракадабра")}<br>
 Видалені букви зі слова: ${deleteLetters('a', "blablabla")}<br>
+Паліндром: ${checkPalindrom('І що сало? Ласощі')}<br>
 Видалені букви з речення: ${deleteLetter("The cookie was very tasty")}<br>
 `);
