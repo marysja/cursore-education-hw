@@ -1,12 +1,26 @@
 let numberN = +(prompt("Введіть число: "));
 let numberM = +(prompt("Введіть число: "));
-if (parseFloat(numberN) - parseInt(numberN) !== 0 || parseFloat(numberM) - parseInt(numberM) !== 0) {
-    alert("Спробуйте ще раз");
+while (parseFloat(numberN) - parseInt(numberN) !== 0) {
+    numberN = +(prompt("Введіть число: "));
 } 
+while (parseFloat(numberM) - parseInt(numberM) !== 0) {
+    numberM = +(prompt("Введіть число: "));
+} 
+
 const SKIP_EVEN_NUMBERS = confirm("Пропустити парні числа?", false);
 let sum = 0;
 
-for (let i = numberN; i <= numberM; i++) {
+for (let i = numberN; i <= numberM; i++ ) {
+  if (SKIP_EVEN_NUMBERS) {
+    if (i % 2 !== 0) {
+      sum += i;
+    }
+  } else {
+    sum += i;
+  }
+ 
+}
+for (let i = numberM; i <= numberN; i++) {
   if (SKIP_EVEN_NUMBERS) {
     if (i % 2 !== 0) {
       sum += i;
