@@ -11,7 +11,7 @@ console.log(getRandomArray(5, 3, 100));
 // №3 Создайте функцию, которая считает среднее арифметическое всех переданных в неё аргументов.
 function getAverage(...numbers) {
   const IGNOR_FRACTIONAL_NUMBER = numbers.filter(num =>(num % 1 === 0));
-    return IGNOR_FRACTIONAL_NUMBER.reduce((a, b) => (a + b)) / IGNOR_FRACTIONAL_NUMBER.length;
+    return IGNOR_FRACTIONAL_NUMBER.reduce((a, b) => (a + b), 0) / IGNOR_FRACTIONAL_NUMBER.length;
 }
 console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));
 
