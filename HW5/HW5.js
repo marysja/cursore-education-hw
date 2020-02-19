@@ -19,36 +19,29 @@ console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));
 function getMedian(...numbers) {
   const IGNOR_FRACTIONAL_NUMBER = numbers.filter(num =>(num % 1 === 0));
   let sortNumbers = numbers.sort((a, b) => a - b);
-  let getMedian = [];
+    let getMedian = [];
   if (numbers.length % 2 === 0) {
     getMedian = (numbers[numbers.length/2 - 1] + numbers[numbers.length/2]);
-  }  else { 
-        getMedian = numbers[(numbers.length - 1) / 2];
+}  else { 
+        getMedian = numbers([Math.floor(numbers.length/ 2)]/2);
 } 
   return getMedian;
 }
-console.log(getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));
+
+console.log(getMedian(6, 2, 55, 11, 78, 2, 77, 57, 87, 23, 2, 56, 3, 2));
 
 // №5 Создайте функцию, которая фильтрует четные числа переданные как аргументы функции
 function filterEvenNumbers(...numbers) {
-   return numbers.filter(num => ((parseFloat(num) - parseInt(num)) === 0) && num % 2);
+     return numbers.filter(item => item === parseInt(item) && item % 2);
 }
 console.log(filterEvenNumbers(1, 2, 3, 4, 5, 6));
 
 //№ 6 Создайте функцию, которая посчитает количество чисел больших 0
-function countPositiveNumbers(...numbers) {
-  let count = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 0) {
-      count++
-    }
-  }
-  return count;
-}
+const countPositiveNumbers = (...numbers) => numbers.filter(item => item >= 0);
 console.log(countPositiveNumbers(1, -2, 3, -4, -5, 6));
 
 // № 7 Создайте функцию, которая отфильтрует все элементы в массиве и оставит только те, которые делятся нацело на 5
 function getDividedByFive(...numbers) {
-  return numbers.filter(num => ((parseFloat(num) - parseInt(num)) === 0) && num % 5 === 0);
+  return numbers.filter(item => item === parseInt(item) && item % 5 === 0);
   }
 console.log(getDividedByFive(6, 2, 55, 11, 78, 2, 55, 85, 57, 87, 23, 2, 56, 3, 2));
