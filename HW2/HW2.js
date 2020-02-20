@@ -3,13 +3,13 @@ let numberM = +(prompt("Введіть друге число: "));
 
 
 
-while (parseFloat(numberM) - parseInt(numberM) !== 0 || numberN !== "") {
+while (numberN == NaN || (numberN - Math.floor(numberN) != 0) || numberN == "") {
     alert ("Спробуйте ще раз");
-  numberM = +(prompt("Введіть число: "));
+  numberM = +(prompt("Введіть перше число: "));
 } 
-while (parseFloat(numberN) - parseInt(numberN) !== 0 || numberM !== "") {
+while (numberM == NaN || (numberM - Math.floor(numberM) != 0) || numberM == "") {
     alert ("Спробуйте ще раз");
-  numberN = +(prompt("Введіть число: "));
+  numberN = +(prompt("Введіть друге число: "));
 } 
 
 const SKIP_EVEN_NUMBERS = confirm("Пропустити парні числа?", false);
