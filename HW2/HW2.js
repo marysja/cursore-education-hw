@@ -1,5 +1,5 @@
-let numberN = +(prompt("Введіть число: "));
-let numberM = +(prompt("Введіть число: "));
+let numberN = +(prompt("Введіть перше число: "));
+let numberM = +(prompt("Введіть друге число: "));
 
 
 
