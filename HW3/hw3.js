@@ -1,12 +1,13 @@
 //Создать функцию getMaxDigit(number) – которая получает любое число и выводит самую большую цифру в этом числе.
 function getMaxDigit(number)
 {
-let max = 0;
-number = number.toString();
-if(number == "") {
+  if(number == " ") {
 alert("Your string is empty ")
 } else {
+  number = number.toString();
+   let max = 0;
     let a = number.length;
+}
     for (let i = 0; i < number.length; i++)
     {
         if (number[i] > max)
@@ -14,10 +15,9 @@ alert("Your string is empty ")
             max = number[i];
         }
     }
+  
+   return max;
 }
-     return max;
-}
-
 //Создать функцию, которая вычисляет степень числа. 
 function myPow(a, n) {
     let b = a;
