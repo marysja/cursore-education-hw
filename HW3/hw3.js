@@ -1,8 +1,11 @@
 //Создать функцию getMaxDigit(number) – которая получает любое число и выводит самую большую цифру в этом числе.
 function getMaxDigit(number)
 {
-  number = number.toString();  
-  let max = 0;
+let max = 0;
+number = number.toString();
+if(number == "") {
+alert("Your string is empty ")
+} else {
     let a = number.length;
     for (let i = 0; i < number.length; i++)
     {
@@ -11,7 +14,8 @@ function getMaxDigit(number)
             max = number[i];
         }
     }
-   return max;
+}
+     return max;
 }
 
 //Создать функцию, которая вычисляет степень числа. 
