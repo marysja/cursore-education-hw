@@ -37,7 +37,7 @@ console.log('4. student.getAverageMark()', student.getAverageMark());
 console.log('4. student.dismiss()', student.dismiss());
 console.log('4. student.recover()', student.recover());
 
-class BudgetStudent extends Student {
+/*class BudgetStudent extends Student {
 constructor(fullName, university, course, marks) {
 super(fullName, university, course, marks)
 getScholarship() {
