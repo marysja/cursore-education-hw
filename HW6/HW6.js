@@ -45,7 +45,7 @@ function getStudentsNames(students){
 }
 console.log(getStudentsNames(students));
 //Создайте функцию, которая выводит лучшего студента из списка по показателю средней оценки.
-unction getBestStudent(students) {
+function getBestStudent(students) {
   let bestAvarageMark = 0;
   bestStudent = " ";
     for (let i = 0; i < students.length; i++) { 
