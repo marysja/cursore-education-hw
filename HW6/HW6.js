@@ -45,15 +45,18 @@ function getStudentsNames(students){
 }
 console.log(getStudentsNames(students));
 //Создайте функцию, которая выводит лучшего студента из списка по показателю средней оценки.
-function getBestStudent(students) {
-    let studentMark = students.map( val => [val.name, getAverageMark(val)]);
-    let max = studentMark[0];
-    for (let i = 0; i < studentMark.length; i++) { 
-        if (max > studentMark[i]) max = studentMark[i]; 
+unction getBestStudent(students) {
+  let bestAvarageMark = 0;
+  bestStudent = " ";
+    for (let i = 0; i < students.length; i++) { 
+      if (bestAvarageMark < getAverageMark(students[i])) {
+        bestAvarageMark = getAverageMark(students[i]);
+        bestStudent = students[i].name;
+      }
     }
-        return max;
+    return bestStudent;
   }
-  console.log(getBestStudent(students));
+console.log(getBestStudent(students));
   //Создайте функцию, которая считает какое количество раз буква повторяется в слове.
   function calculateWordLetters(str){
     sums = {};
