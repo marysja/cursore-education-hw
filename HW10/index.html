@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        JS Drum Kit
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kdb>A</kdb>
+            <span class="sound">bongo</span>
+        </div>
+        <div data-key="83" class="key">
+            <kdb>S</kdb>
+            <span class="sound">boom</span>
+        </div>
+        <div data-key="68" class="key">
+            <kdb>D</kdb>
+            <span class="sound">boomer</span>
+        </div>
+        <div data-key="70" class="key">
+            <kdb>F</kdb>
+            <span class="sound">broke</span>
+        </div>
+        <div data-key="71" class="key">
+            <kdb>G</kdb>
+            <span class="sound">conga</span>
+        </div>
+        <div data-key="72" class="key">
+            <kdb>H</kdb>
+            <span class="sound">piano</span>
+        </div>
+        <div data-key="74" class="key">
+            <kdb>J</kdb>
+            <span class="sound">scratch</span>
+        </div>
+        <div data-key="75" class="key">
+            <kdb>K</kdb>
+            <span class="sound">snare</span>
+        </div>
+        <div data-key="76" class="key">
+            <kdb>L</kdb>
+            <span class="sound">elephant</span>
+        </div>
+    </div>
+    <audio data-key="65" src="./bongo.mp3"></audio>
+    <audio data-key="83" src="./boom.mp3"></audio>
+    <audio data-key="68" src="./boomerang.mp3"></audio>
+    <audio data-key="70" src="./broke.mp3"></audio>
+    <audio data-key="71" src="./conga.mp3"></audio>
+    <audio data-key="72" src="./piano.mp3"></audio>
+    <audio data-key="74" src="./scratch.mp3"></audio>
+    <audio data-key="75" src="./snare.mp3"></audio>
+    <audio data-key="76" src="./elephant.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
