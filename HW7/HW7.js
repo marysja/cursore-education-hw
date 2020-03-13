@@ -16,9 +16,9 @@ const litva = {
 
 //Создайте функцию, которая считает сколько налогов вы заплатите как IT-специалист в какой-либо стране. Функция должна вызываться через call и работать с данными через this
 function getMyTaxes(salary){
-  return this.tax * this.middleSalary;
+ return salary * this.tax;
 }
-console.log(getMyTaxes.call(ukraine, []));
+console.log(getMyTaxes.call(ukraine, 5000));
 //Создайте функцию, которая считает сколько в среднем налогов платят IT-специалистсы в каждой стране. (tax * middleSalary). Функция должна вызываться через call и работать с данными через this
  function getMiddleTaxes(country) {
    return this.tax * this.middleSalary;
