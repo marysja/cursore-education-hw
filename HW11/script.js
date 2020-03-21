@@ -15,6 +15,5 @@ function getSymbol() {
       i++;
     }
     return console.log(chineseSymbol);
-  }
-  
+  }  
   getRandomChinese(4);
